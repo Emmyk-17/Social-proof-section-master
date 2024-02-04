@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Outfit&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, auto;
+    font-size: 15px;
+    font-family: League Spartan;
+    margin: 4rem 8rem;
+}
+.first, .second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 85%;
+}
+h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    width: 45%;
+}
+.message p {
+    color:  hsl(303, 10%, 53%);
+    margin-top: 1.2rem;
+    line-height: 1.2;
+    width: 80%;
+}
+ul {
+    list-style: none;
+}
+.message, .rate {
+    width: 50%;
+}
+li {
+    background-color: hsl(300, 24%, 96%);
+    color: hsl(300, 43%, 22%);
+    font-weight: bold;
+    padding: 0.2rem 1rem;
+    width: 83%;
+    line-height: 1.8;
+    padding-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+#text  {
+    padding-left: 1rem;
+}
+.two {
+    margin-left: 2.2rem;
+    margin-top: 0.8rem;
+}
+.three {
+    margin-left: 4rem;
+    margin-top: 0.8rem;
+}
+.comments1, .comments2, .comments3{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    margin-right: 1.2rem;
+    padding: 1rem 1.2rem;
+    margin-top: 2rem;
+    width: 33.33%;
+    padding-bottom: 2rem;
+}
+#pic {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+h3 {
+    color: hsl(0, 0%, 100%);
+}
+#main {
+    display: grid;
+    grid-template-columns: 3rem auto;
+    margin-top: 1rem;
+}
+#container p{
+    color: hsl(333, 80%, 67%);
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.comments1 {
+    margin-bottom: 4rem;
+}
+.comments2 {
+    margin-bottom: 2rem;
+}
+.second p {
+    font-weight: 400;
+    color: hsl(300, 24%, 96%);
+    line-height: 1.2;
+}
+@media (max-width: 430px) {
+ body {
+    margin: 2rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .first, .second {
+    flex-direction: column;
+    width: 90%;
+}
+h1 {
+    text-align: center;
+    width: 100%;
+    padding: 0 2rem;
+}
+.message p {
+    width: auto;
+    text-align: center;
+    padding: 0 5px;
+}
+.message {
+    width: 100%;
+}
+.rate {
+    width: 98%;
+    margin-bottom: 1.5rem;
+}
+li {
+    width: 100%;
+    padding: 0.2rem 2rem;
+    line-height: 1.2;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+.star-rating img {
+    padding: 3px 2px;
+    padding-top: 7px;
+}
+.two, .three {
+    margin-left: 0.5rem;
+}
+
+#text {
+    padding: unset;
+    padding-bottom: 7px;
+}
+.comments1, .comments2, .comments3 {
+    width: 100%;
+    margin: unset;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding-left: 1.5rem;
+}
+#main {
+    grid-template-columns: 3.5rem auto;
+}
+.second p {
+    line-height: 1.4;
+}
+}
